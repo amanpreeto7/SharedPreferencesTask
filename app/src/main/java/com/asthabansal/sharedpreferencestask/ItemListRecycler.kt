@@ -34,14 +34,14 @@ class ItemListRecycler() : RecyclerView.Adapter<ItemListRecycler.ViewHolder>() {
     }
 
     override fun getItemCount(): Int {
-        return 30
+        return listItems
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         System.out.println("color1 $color1")
         if(position%2==0)
         {
-            holder.colorView.setBackgroundColor(Color.parseColor("#ff0000"))
+            holder.colorView.setBackgroundColor(Color.parseColor(color2))
         }
         else
         {
